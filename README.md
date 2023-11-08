@@ -1,1 +1,1 @@
-# Diglett-Whack-A-Mole
+# Diglett-Whac-A-Mole
