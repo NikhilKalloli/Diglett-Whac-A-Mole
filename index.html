@@ -12,17 +12,19 @@
 <body>
     <h1 class="title">Diglett-Whac-A-Mole</h1>
     <button onclick="start()">START GAME</button>
+    <button onclick="playAudio()">🎵 Play/Pause Music</button>
 
 <script>
-    let audio = new Audio("game-images-music/bg-music.mp3");
-    window.onload = function() {
-    audio.play();
+const audio = new Audio("game-images-music/bg-music.mp3");
+
+const playAudio = () => {
+    audio.paused?audio.play():audio.pause()
     audio.loop = true;
     };
 
     const start = () => {
         window.location = "game.html"
-    }
+    };
 </script>
 
 </html>
